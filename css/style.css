@@ -1,0 +1,136 @@
+* {
+    font-family: Roboto, sans-serif;
+    /*outline: 1px solid skyblue;*/
+}
+
+.container {
+    /*max-width: 1000px;*/
+    /*min-height: 100vh;*/
+    margin: auto;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    text-align: center;
+}
+
+.fa-solid, .fa-brands {
+    /*color: green;*/
+}
+
+header {
+    /*border-bottom: 1px solid;*/
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.settings-bar {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    margin: auto;
+
+
+}
+
+.settings-bar__title {
+    margin-right: auto;
+}
+
+.settings-bar__input {
+    border-bottom: 1px solid gray;
+    width: 2rem;
+    text-align: center;
+    padding: 0.25rem 0;
+
+}
+
+
+.settings-bar__button {
+    border: 1px solid gray;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+}
+
+.settings-bar__button:hover {
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: repeat(4, 8vw);
+    grid-template-rows: repeat(4, 8vw);
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+}
+
+.field-item {
+    --color: #000;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+    opacity: 1;
+
+    font-size: 40px;
+}
+
+.field-item:after {
+    content: "";
+    position: absolute;
+    display: inline;
+    background-color: var(--color);
+    width: 90px;
+    height: 90px;
+    transition: linear 0.1s;
+    border: 45px solid var(--color);
+
+
+}
+
+
+.field-item:hover:after {
+    width: 100px;
+    height: 100px;
+}
+
+.field-item:not(.field-item_checked):hover:after {
+    border: 50px solid var(--color);
+}
+
+.field-item_checked:after {
+    border: 1px solid var(--color);
+    background-color: transparent;
+}
+
+
+.field-item_solved {
+    opacity: 0.5;
+}
+
+.field-item_solved:after {
+    opacity: 0;
+}
+
+.message {
+    padding: 4rem;
+    margin: auto;
+    background-color: #fff;
+}
+
+.message__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}

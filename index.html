@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Николаев. JS. HW17</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/07f15c247b.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>MEMORY the game</h1>
+        <div class="settings-bar">
+            <p class="settings-bar__title">Размеры поля:</p>
+            <input class="settings-bar__input settings-bar__width" max="8" min="4" type="text" value="4">
+            <p>&nbsp;x&nbsp;</p>
+            <input class="settings-bar__input settings-bar__height" max="8" min="4" type="text" value="4">
+        </div>
+        <div class="settings-bar">
+            <p class="settings-bar__title">Случайные цвета:</p>
+            <input class="settings-bar__input settings-bar__color" id="" name="color" type="checkbox">
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="field" style="height:0"></div>
+    </div>
+</section>
+<section>
+    <div class="settings-bar">
+        <button class="settings-bar__button settings-bar__button_new">Новая игра</button>
+    </div>
+</section>
+<div class="modal">
+    <div class="message">
+        <h2 class="message__title">Поздравляем</h2>
+        <p class="message__text">Вы завершили игру за <span class="message__count"></span> ходов.</p>
+    </div>
+</div>
+<script
+        crossorigin="anonymous"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
